@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050D1C"/>
+      <stop offset="0.55" stop-color="#081A3E"/>
+      <stop offset="0.8" stop-color="#0B2555"/>
+      <stop offset="1" stop-color="#050D1C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.24" cy="0.18" r="0.5">
+      <stop offset="0" stop-color="#B8C6E0" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#B8C6E0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trailR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DCE4F2" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#DCE4F2" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#DCE4F2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="trailB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7E97C8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7E97C8" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#7E97C8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur3"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <g fill="#060F22">
+    <rect x="60" y="430" width="150" height="470"/>
+    <rect x="240" y="360" width="110" height="540"/>
+    <rect x="380" y="470" width="170" height="430"/>
+    <rect x="590" y="400" width="120" height="500"/>
+    <rect x="1180" y="380" width="130" height="520"/>
+    <rect x="1340" y="460" width="180" height="440"/>
+  </g>
+  <g fill="#12294f" opacity="0.5">
+    <rect x="270" y="390" width="8" height="10"/><rect x="290" y="420" width="8" height="10"/>
+    <rect x="1210" y="410" width="8" height="10"/><rect x="1240" y="450" width="8" height="10"/>
+    <rect x="620" y="430" width="8" height="10"/><rect x="650" y="470" width="8" height="10"/>
+  </g>
+  <g filter="url(#blur3)">
+    <rect x="180" y="560" width="620" height="5" fill="url(#trailR)"/>
+    <rect x="520" y="590" width="820" height="4" fill="url(#trailB)"/>
+    <rect x="90" y="620" width="520" height="4" fill="url(#trailB)"/>
+    <rect x="760" y="648" width="700" height="5" fill="url(#trailR)"/>
+  </g>
+  <g filter="url(#blur6)">
+    <rect x="360" y="676" width="900" height="3" fill="url(#trailB)" opacity="0.7"/>
+  </g>
+  <g transform="translate(1010, 780)">
+    <circle cx="0" cy="-302" r="24" fill="#01040B"/>
+    <path d="M -42 -268 C -42 -282 42 -282 42 -268 L 36 -128 L 26 -4 L 12 -4 L 5 -118 L -5 -118 L -12 -4 L -26 -4 L -36 -128 Z" fill="#01040B"/>
+  </g>
+  <text x="64" y="816" font-family="'IBM Plex Mono','Courier New',monospace" font-size="20" font-weight="500" letter-spacing="8" fill="#F4F6FA" opacity="0.7">STREET PANTS</text>
+  <text x="64" y="846" font-family="'IBM Plex Mono','Courier New',monospace" font-size="13" letter-spacing="5" fill="#F4F6FA" opacity="0.4">CITY UNIFORM / 01 — NIGHT</text>
+  <rect width="1600" height="900" filter="url(#grain)" opacity="0.6"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F6FA"/>
+      <stop offset="1" stop-color="#E1E6EF"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.22"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="0.6" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#071A3D" stop-opacity="0.12"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.045"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <ellipse cx="450" cy="1078" rx="230" ry="26" fill="#071A3D" opacity="0.14" filter="url(#soft)"/>
+  <path d="M 334 300 L 566 300 L 576 334 L 598 450 L 574 1050 L 466 1050 L 459 520 L 441 520 L 434 1050 L 326 1050 L 302 450 L 324 334 Z" fill="#101318"/>
+  <path d="M 334 300 L 566 300 L 576 334 L 598 450 L 574 1050 L 466 1050 L 459 520 L 441 520 L 434 1050 L 326 1050 L 302 450 L 324 334 Z" fill="url(#shade)"/>
+  <path d="M 334 300 L 566 300 L 576 334 L 598 450 L 574 1050 L 466 1050 L 459 520 L 441 520 L 434 1050 L 326 1050 L 302 450 L 324 334 Z" fill="none" stroke="#05060a" stroke-width="2.5" opacity="0.8"/>
+  
+  <rect x="324" y="300" width="252" height="36" fill="#101318" stroke="#05060a" stroke-width="2"/>
+  <circle cx="450" cy="318" r="7" fill="#C7CDD9" stroke="#8A93A6" stroke-width="2"/><rect x="340" y="296" width="10" height="44" fill="#05060a" opacity="0.85"/><rect x="392" y="296" width="10" height="44" fill="#05060a" opacity="0.85"/><rect x="445" y="296" width="10" height="44" fill="#05060a" opacity="0.85"/><rect x="503" y="296" width="10" height="44" fill="#05060a" opacity="0.85"/><rect x="550" y="296" width="10" height="44" fill="#05060a" opacity="0.85"/>
+    <path d="M 457 340 L 457 448" stroke="#05060a" stroke-width="3" fill="none"/>
+    <path d="M 350 366 L 396 456" stroke="#05060a" stroke-width="3" fill="none" opacity="0.9"/>
+    <path d="M 550 366 L 504 456" stroke="#05060a" stroke-width="3" fill="none" opacity="0.9"/>
+  <path d="M 520 560 L 520 1030" stroke="rgba(255,255,255,0.10)" stroke-width="2.5" fill="none"/>
+  <path d="M 380 560 L 380 1030" stroke="rgba(255,255,255,0.10)" stroke-width="2.5" fill="none"/>
+  <path d="M 472 1026 L 568 1026" stroke="rgba(255,255,255,0.10)" stroke-width="2" stroke-dasharray="7 6" fill="none"/>
+  <path d="M 332 1026 L 428 1026" stroke="rgba(255,255,255,0.10)" stroke-width="2" stroke-dasharray="7 6" fill="none"/>
+  <rect width="900" height="1200" fill="url(#vig)"/>
+  <rect width="900" height="1200" filter="url(#grain)" opacity="0.6"/>
+  
+  <text x="48" y="1126" font-family="'IBM Plex Mono','Courier New',monospace" font-size="17" font-weight="500" letter-spacing="6" fill="#071A3D" opacity="0.55">STREET PANTS</text>
+  <text x="48" y="1152" font-family="'IBM Plex Mono','Courier New',monospace" font-size="12" letter-spacing="4" fill="#071A3D" opacity="0.34">03 / STRAIGHT — BLACK</text>
+</svg>
